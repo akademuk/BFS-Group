@@ -1,0 +1,994 @@
+/*Fonts **********************************************/
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../fonts/Gilroy-Bold.eot') format('embedded-opentype'), 
+         url('../fonts/Gilroy-Bold.woff2') format('woff2'), 
+         url('../fonts/Gilroy-Bold.woff') format('woff'), 
+         url('../fonts/Gilroy-Bold.ttf')  format('truetype');
+         font-weight: 700;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('../fonts/Gilroy-Regular.eot') format('embedded-opentype'), 
+         url('../fonts/Gilroy-Regular.woff2') format('woff2'), 
+         url('../fonts/Gilroy-Regular.woff') format('woff'), 
+         url('../fonts/Gilroy-Regular.ttf')  format('truetype');
+         font-weight: 400;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: url('../fonts/Gilroy-Semibold.eot') format('embedded-opentype'), 
+         url('../fonts/Gilroy-Semibold.woff2') format('woff2'), 
+         url('../fonts/Gilroy-Semibold.woff') format('woff'), 
+         url('../fonts/Gilroy-Semibold.ttf')  format('truetype');
+         font-weight: 600;
+         font-style: normal;
+}
+
+.tabs .active { 
+    color: #FFFFFF;
+    background: #121212;
+    transition: all 0.3s;
+}
+.tab_item { 
+    display: none; 
+}
+.tab_item:first-child { 
+    display: block; 
+}
+.flexActive {
+    display: none !important;
+}
+.mainRegistration {
+    margin-bottom: 120px;
+    background: rgb(255,255,255);
+    background: linear-gradient(to right, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 37%, rgba(247,247,247,1) 37%, rgba(247,247,247,1) 100%);
+}
+.mainRegistration .wrapper{
+    display: flex;
+    align-items: flex-start;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.mainRegistrationLeft {
+    width: 30%;
+    margin-top: 40px;
+}
+.mainRegistrationRight {
+    width: 70%;
+    min-height: 480px;
+    background: rgba(247,247,247,1);
+}
+.mainRegistrationLeft h2 {
+    font-family: 'Gilroy-Bold';
+    font-size: 30px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #121212;
+    margin-bottom: 40px;
+}
+.tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+    width: 270px;
+    height: 50px;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Semibold';
+    font-size: 18px;
+    line-height: 110%;
+    color: #121212;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.tab_item h3 {
+    font-family: 'Gilroy-Semibold';
+    font-size: 20px;
+    line-height: 110%;
+    color: #121212;
+    margin-bottom: 20px;
+}
+.formProfile {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 50px 0;
+    justify-content: space-around;
+}
+.tab_item {
+    padding-top: 120px;
+    padding-left: 15px;
+}
+.inputBig {
+    border: 1px solid #969696;
+    background: transparent;
+    height: 50px;
+    width: 48%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    line-height: 110%;
+    color: #888888;
+}
+.inputBig::placeholder {
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    line-height: 110%;
+    color: #888888;
+}
+.inputBig:nth-child(odd) {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.submitForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 48px;
+    background: #121212;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Semibold';
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-left: auto;
+}
+.tabItemSectionFlex {
+    height: 50px;
+    border: 1px solid #969696;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+.checkboxForm {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #969696;
+}
+.fileName {
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    line-height: 110%;
+    color: #2D2D2D;
+    width: 135px;
+    overflow: hidden;
+}
+.fileChanges {
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    line-height: 110%;
+    color: #2D2D2D;
+    display: none;
+}
+.fileDate {
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    line-height: 110%;
+    color: #2D2D2D;
+    width: 70px;
+    overflow: hidden;
+}
+.fileBtnGreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 170px;
+    height: 48px;
+    background: #23AD5F;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    line-height: 110%;
+    color: #FFFFFF;
+}
+.fileBtnGray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 170px;
+    height: 48px;
+    background: #969696;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    line-height: 110%;
+    color: #FFFFFF; 
+}
+.tab_itemBtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.tab_itemBtn button {
+    font-family: 'Gilroy-Semibold';
+    font-size: 18px;
+    line-height: 130%;
+}
+.delete {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 55px;
+    width: 270px;
+    height: 48px;
+    border: 1px solid #000000;
+    color: #000000;
+    margin-right: 30px;
+}
+.download {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 55px;
+    width: 270px;
+    height: 48px;
+    background: #121212;
+}
+.tabItemSection.active ~ .tab_itemBtn {
+    display: none;
+}
+.tabItemSection.active .tabItemSectionFlex .fileChanges {
+    display: flex;
+}
+.back {
+    display: none;
+}
+.backActive {
+    display: flex;
+    opacity: 1;
+    font-family: 'Gilroy-Semibold';
+    font-size: 18px;
+    line-height: 130%;
+    cursor: pointer;
+    color: #000000;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+.back img {
+    margin-right: 11px;
+}
+.tabItemSection.active ~ .back {
+    display: flex;
+}
+.tabItemSectionSliderArrows a {
+    font-family: 'Gilroy-Semibold';
+    font-size: 18px;
+    line-height: 130%;
+    color: #000000;
+    text-decoration: none;
+}
+.tabItemSectionSliderArrows a img {
+    margin-right: 12px;
+}
+.tabItemSectionSliderArrows a:nth-last-of-type(1) img{
+    transform: rotate(180deg);
+    margin-left: 12px;
+    margin-right: 0;
+}
+.tabItemSectionSlider{
+    display: none;
+}
+.tabItemSectionSlider.active {
+    display: block !important;
+    margin-top: 40px;
+}
+.tabItemSectionSliderArrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tabItemSectionSlider > img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 20px 0;
+}
+.formCheckbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.formCheckbox label {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 24px;
+    background: #CDCDCD;
+    font-family: 'Gilroy-Regular';
+    font-size: 10px;
+    line-height: 110%;
+    color: #2D2D2D;
+    margin-bottom: 10px;
+}
+.formCheckboxContainer input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.formCheckboxContainer {
+    position: relative;
+}
+.formCheckboxContainer input:checked + label {
+    background: rgba(35, 173, 95, 0.5);
+}
+button, a {
+    outline:none !important;
+}
+.companyRegistrationTop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 15px;
+    height: 50px;
+    background: #CDCDCD;
+    margin-bottom: 30px;
+}
+.companyRegistrationTop p {
+    font-family: 'Gilroy-Semibold';
+    font-size: 18px;
+    line-height: 130%;
+    color: #000000;
+}
+.companyRegistrationForm h3 {
+    font-family: 'Gilroy-Bold';
+    font-size: 24px;
+    line-height: 110%;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.companyRegistrationFormTop {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.companyRegistrationForm form select {
+    padding: 15px 16px;
+    max-width: 254px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #969696;
+    box-sizing: border-box;
+    margin-right: 20px;
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 110%;
+    color: #888888;
+    margin-bottom: 20px;
+}
+.companyRegistrationInput {
+    padding: 15px 16px;
+    max-width: 254px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #969696;
+    box-sizing: border-box;
+    margin-right: 20px;
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 110%;
+    color: #888888;
+    margin-bottom: 20px;
+}
+.companyRegistrationInput::placeholder {
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 110%;
+    color: #888888;
+}
+.date {
+    width: 255px;
+    position: relative;
+}
+.date input {
+    width: 100%;
+}
+.date::before {
+    content: "";
+    background: url(../img/calendar.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 16px;
+    top: 13px;
+}
+.date .companyRegistrationInput{
+    margin-right: 0 !important;
+}
+.marginRight {
+    margin-right: 0 !important;
+}
+.companyRegistrationForm h4 {
+    font-family: 'Gilroy-Semibold';
+    font-size: 16px;
+    line-height: 110%;
+    color: #121212;
+    margin-bottom: 10px;
+}
+.availability label input {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #969696;
+    margin-right: 16px;
+}
+.availability label {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 15px 16px;
+    min-width: 129px;
+    width: 129px;
+    height: 50px;
+    border: 1px solid #969696;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 110%;
+    color: #888888;
+}
+.availability label:nth-of-type(1) {
+    margin-right: 16px;
+}
+.availabilityFlex {
+    display: flex;
+}
+.availability {
+    margin-bottom: 30px;
+}
+.residenceFlex input{
+    max-width: 250px !important;
+}
+.representatives input {
+    max-width: 250px;
+}
+.companyRegistrationFormSubmit  {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+}
+.btnSave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 55px;
+    width: 270px;
+    border: 1px solid #000000;
+    background: #fff;
+    font-family: 'Gilroy-Semibold';
+    font-size: 18px;
+    box-sizing: border-box;
+    line-height: 130%;
+    color: #000000;
+}
+.btnFurther {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 55px;
+    width: 270px;
+    background: #121212;
+    font-family: 'Gilroy-Semibold';
+    font-size: 18px;
+    line-height: 130%;
+    margin-left: 30px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+.InformationFormTop {
+    display: flex;
+}
+.InformationLeft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 24px;
+}
+.InformationRight {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.InformationFormTop input {
+    min-width: 24px;
+    min-height: 24px;
+    border: 1px solid #000000;
+    margin-right: 10px;
+}
+.InformationFormTop label {
+    margin-bottom: 20px;
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 110%;
+    color: #2D2D2D;
+    display: flex;
+    align-items: center;
+}
+.Row {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 0 16px 0;
+}
+.Row button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 16px;
+    width: 80px;
+    height: 36px;
+    background: rgba(205, 205, 205, 0.3);
+    border: 1px solid #969696;
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 110%;
+    color: #000000;
+}
+.Row button:nth-of-type(1) {
+    margin-right: 16px;
+}
+.companyRegistrationForm3 {
+    font-family: 'Gilroy-Bold';
+    font-size: 20px;
+    line-height: 140%;
+    color: #121212;
+    margin-bottom: 20px;
+}
+.hand input {
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    margin-right: 16px;
+    border: 1px solid #4B4B4B;
+}
+.hand {
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 140%;
+    color: #121212;
+}
+.radioYesContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 34px;
+}
+.radioYesContainer label {
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 140%;
+    color: #121212;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.radioYesContainer label input {
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #4B4B4B;
+    margin-right: 16px;
+}
+input[type="radio"]:checked {
+    background-color: #FFF;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+    background-clip: content-box;
+    border: 2px solid #4B4B4B;
+    background-color: #4B4B4B;
+    border-radius: 50%;
+}
+input[type="checkbox"]:checked { 
+    -webkit-filter: sepia(100%) hue-rotate(300deg); 
+}
+.bigsInput input{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 16px;
+    min-width: 425px;
+    height: 50px;
+    border: 1px solid #969696;
+    margin-top: 30px;
+}
+.noFlex {
+    flex-direction: column;
+}
+.noFlex label {
+    background: transparent;
+    border: none;
+    padding-left: 0;
+    font-family: 'Gilroy-Bold';
+    color: #121212;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.aboutKey {
+    margin-top: 30px;
+}
+.aboutKeyRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.aboutKeyRow h4 {
+    margin-bottom: 0 !important;
+}
+.aboutKeyRow .Row {
+    margin: 0 !important;
+}
+.aboutKeyRowContent {
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutKeySmoll {
+    width: 118px;
+    padding: 0 16px !important;
+}
+.payOfficesContent label {
+    display: flex;
+    align-items: center;
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 110%;
+    color: #888888;
+    padding: 16px 0 16px 16px;
+    width: 255px;
+    height: 50px;
+    border: 1px solid #969696;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.payOfficesContent label input {
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    margin-right: 16px;
+    border: 1px solid #969696;
+}
+.payOfficesContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bigText {
+    width: 530px;
+    padding: 16px 0 16px 16px;
+    height: 50px;
+    border: 1px solid #969696;
+    box-sizing: border-box;
+    background: transparent;
+}
+.marginRightNone {
+    margin-right: 0 !important;
+}
+.noFlex label span {
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 140%;
+    color: #121212;
+    margin-left: 5px;
+}
+.ulContainer p {
+    margin-bottom: 10px;
+}
+.ulContainer:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+.ulContainer  {
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 130%;
+    color: #888888;
+}
+.ulContainer ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+.payOffices {
+    margin-bottom: 30px;
+}
+.availability h4 span {
+    font-family: 'Gilroy-Regular' !important;
+}
+.availability .Row {
+    margin-top: 0 !important;
+}
+.biggInput {
+    min-width: 392px;
+    height: 50px;
+    border: 1px solid #969696;
+}
+.questionnaire > input {
+    box-sizing: border-box;
+    padding: 15px 16px;
+    width: 530px;
+    height: 50px;
+    border: 1px solid #969696;
+}
+.questionnaire > input:nth-of-type(1) {
+    margin-right: 15px;
+}
+.questionnaire > input:nth-of-type(2) {
+    width: 255px;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+.questionnaireChexbox label {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Gilroy-Regular' !important;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 10px;
+    color: #121212;
+}
+.questionnaireChexbox label input {
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #4B4B4B;
+    margin-right: 16px;
+}
+.companyRegistrationForm form h4 span {
+    font-family: 'Gilroy-Regular' !important; 
+}
+.companyRegistrationFormSection input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 16px;
+    width: 392px;
+    height: 50px;
+    border: 1px solid #969696;
+}
+.companyRegistrationFormSection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.companyRegistrationFormSection input:nth-of-type(1) {
+    margin-right: 20px;
+}
+input::placeholder {
+    font-family: 'Gilroy-Regular' !important; 
+    font-size: 16px;
+    line-height: 110%;
+    color: #888888;
+}
+.assetsVolume {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.assetsVolume input {
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    margin-right: 16px;
+    border: 1px solid #4B4B4B;
+}
+.assetsVolume label {
+    font-family: 'Gilroy-Regular' !important; 
+    font-size: 16px;
+    line-height: 140%;
+    color: #121212;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.navigationRadioContainer > p {
+    font-family: 'Gilroy-Regular' !important; 
+    font-size: 16px;
+    line-height: 140%;
+    color: #121212;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.one:before {
+    content: "1)";
+    font-size: 16px;
+    line-height: 140%;
+    color: #121212;
+   margin-right: 20px;
+}
+.two:before {
+    content: "2)";
+    font-size: 16px;
+    line-height: 140%;
+    color: #121212;
+    margin-right: 20px;
+}
+
+.free:before {
+    content: "3)";
+    font-size: 16px;
+    line-height: 140%;
+    color: #121212;
+    margin-right: 20px;
+}
+.companyRegistrationFormSection input {
+    background: transparent;
+}
+.BFSGservicesTopCon label {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 15px 16px;
+    width: 277px;
+    height: 50px;
+    border: 1px solid #969696;
+    font-family: 'Gilroy-Regular' !important; 
+    font-size: 16px;
+    line-height: 110%;
+    color: #888888;
+}
+.BFSGservicesTopCon label input {
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #969696;
+    margin-right: 16px;
+}
+.BFSGservicesTopCon {
+    display: flex;
+    width: 71%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.BFSGservicesTop {
+    margin-bottom: 30px;
+}
+.BFSGservicesTop .residence {
+    margin-bottom: 30px;
+}
+.pleaseSpecify {
+    display: flex;
+    align-items: center;
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 110%;
+    color: #888888;
+    padding: 16px 0 16px 16px;
+    width: 255px;
+    height: 50px;
+    border: 1px solid #969696;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background: transparent;
+}
+.BFSGservicesContent {
+    display: flex;
+    align-items: center;
+}
+.BFSGservicesContent input{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 15px 16px;
+    height: 50px;    
+    border: 1px solid #969696;
+}
+.BFSGservicesContent input::placeholder {
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 110%;
+    color: #888888;
+}
+.BFSGservicesContent1 {
+    width: 331px;
+    margin-right: 16px;
+}
+.BFSGservicesContent2 {
+    width: 101px;
+    margin-right: 16px;
+}
+.BFSGservicesContent3 {
+    width: 250px;
+    margin-right: 16px;
+}
+.BFSGservicesContent4 {
+    width: 140px;
+}
+.dataAbout {
+    margin-top: 10px;
+    display: flex;
+    height: 84px;
+    justify-content: space-between;
+}
+.dataAbout input {
+    margin-right: 16px;
+    display: flex;
+    align-items: flex-start;
+    width: 125px;
+    background: transparent;
+    border: 1px solid #969696;
+    padding: 15px 16px;
+}
+.dataAbout input::placeholder {
+    margin-bottom: auto;
+}
+.dataAboutContainer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 10px;
+    border: 1px solid #969696;
+    min-width: 129px;
+}
+.dataAboutContainer p {
+    font-family: 'Gilroy-Regular';
+    font-size: 10px;
+    line-height: 110%;
+    color: #888888;
+    margin-bottom: 8px;
+}
+.dataAboutContainer {
+    margin-right: 16px;
+}
+.dataAbout input:nth-last-of-type(1) {
+    margin-right: 0;
+}
+.dataAboutContainer label {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 110%;
+    color: #888888;
+    margin-bottom: 8px;
+}
+.dataAboutContainer label > input {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #969696;
+    margin-right: 16px !important;
+}
+.dataAboutContainer label:nth-last-of-type(1) {
+    margin-bottom: 8px;
+}
+input {
+    background: transparent;
+}
