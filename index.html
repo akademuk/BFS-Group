@@ -720,7 +720,7 @@
                     </div>
                 </div>
                 <div class="tab_item">
-                <!--<div class="companyRegistration">
+                    <div class="companyRegistration">
                         <div class="companyRegistrationTop">
                             <p>1 из 7</p>
                         </div>
@@ -786,12 +786,12 @@
                                         <input type="text" class="companyRegistrationInput" placeholder="E-mail">
                                    </div>
                                 </div>
-                                
-                                <div class="companyRegistrationFormSubmit">
-                                    <input type="submit" value="Save" class="btnSave">
-                                    <input type="submit" value="Further" class="btnFurther">
-                                </div>
                             </form>
+                            <div class="companyRegistrationFormSubmit">
+                                <button name="prev">Prev</button>
+                                <button class="btnSave">Save</button>
+                                <button name="next" class="btnFurther">Further</button>
+                            </div>
                         </div>
                     </div>
                     <div class="companyRegistration">
@@ -942,12 +942,12 @@
                                         </label>
                                     </div>
                                 </div>
-
-                                <div class="companyRegistrationFormSubmit">
-                                    <input type="submit" value="Save" class="btnSave">
-                                    <input type="submit" value="Further" class="btnFurther">
-                                </div>
                             </form>
+                            <div class="companyRegistrationFormSubmit">
+                                <button name="prev">Prev</button>
+                                <button class="btnSave">Save</button>
+                                <button name="next" class="btnFurther">Further</button>
+                            </div>
                         </div>
                     </div>
                     <div class="companyRegistration">
@@ -1177,11 +1177,12 @@
                                         <input type="text" placeholder="Others" class="bigText">
                                     </div>
                                 </div>                    
-                                <div class="companyRegistrationFormSubmit">
-                                    <input type="submit" value="Save" class="btnSave">
-                                    <input type="submit" value="Further" class="btnFurther">
-                                </div>
                             </form>
+                            <div class="companyRegistrationFormSubmit">
+                                <button name="prev">Prev</button>
+                                <button class="btnSave">Save</button>
+                                <button name="next" class="btnFurther">Further</button>
+                            </div>
                         </div>
                     </div>
                     <div class="companyRegistration">
@@ -1277,28 +1278,14 @@
                                          </div>
                                     </div>
                                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                <div class="companyRegistrationFormSubmit">
-                                    <input type="submit" value="Save" class="btnSave">
-                                    <input type="submit" value="Further" class="btnFurther">
-                                </div>
                             </form>
+                            <div class="companyRegistrationFormSubmit">
+                                <button name="prev">Prev</button>
+                                <button class="btnSave">Save</button>
+                                <button name="next" class="btnFurther">Further</button>
+                            </div>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="companyRegistration">
                         <div class="companyRegistrationTop">
                             <p>5 из 7</p>
@@ -1407,7 +1394,7 @@
                                 </div>
 
                                 <div class="dataAbout">
-                                    <input type="text" placeholder="Surname, First Name, Patronymic">
+                                    <input type="text" placeholder="Surname, First Name, Patronymic" class="dataAboutbigs">
                                     <input type="text" placeholder="Date of Birth">
                                     <div class="dataAboutContainer">
                                         <p>Tax Resident of Estonia</p>
@@ -1433,12 +1420,12 @@
                                     </div>
                                     <input type="text" placeholder="Residence">
                                 </div>
-
-                                <div class="companyRegistrationFormSubmit">
-                                    <input type="submit" value="Save" class="btnSave">
-                                    <input type="submit" value="Further" class="btnFurther">
-                                </div>
                             </form>
+                            <div class="companyRegistrationFormSubmit">
+                                <button name="prev">Prev</button>
+                                <button class="btnSave">Save</button>
+                                <button name="next" class="btnFurther">Further</button>
+                            </div>
                         </div>
                     </div>
                     <div class="companyRegistration">
@@ -1446,73 +1433,102 @@
                             <p>6 из 7</p>
                         </div>
                         <div class="companyRegistrationForm">
-                            <h3>Main data</h3>
+                            <h3>Political participation <span>(only owners and representatives)</span></h3>
                             <form action="">
-                                <div class="companyRegistrationFormTop">
-                                    <input type="text" class="companyRegistrationInput" placeholder="Company name">
-                                    <input type="text" class="companyRegistrationInput" placeholder="Registration number">
-                                    <div class="date">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Registration date">
+                                <h4>I confirm that the actual beneficiary(ies), owner(s), management board, representatives of the designated persons and their family members:</h4>
+                                <div class="politicalParticipation">
+                                    <label for="politicalParticipation1">
+                                        <input type="checkbox" id="politicalParticipation1">
+                                        is (are) not a politically exposed person
+                                    </label>
+                                    <label for="politicalParticipation2">
+                                        <input type="checkbox" id="politicalParticipation2">
+                                        is (are) not a person associated with the politically exposed person (family members, immediate circle)
+                                    </label>
+                                    <label for="politicalParticipation3">
+                                        <input type="checkbox" name="politicalParticipation" id="politicalParticipation3" value="politicalParticipation3">
+                                        is (are) a politically exposed person <span> (please fill in the fields below)</span>
+                                    </label>
+                                    <div class="politicalParticipationPosition">
+                                        <input type="text" placeholder="First name">
+                                        <input type="text" placeholder="Last name">
+                                        <input type="text" placeholder="Name of organization">
+                                        <input type="text" placeholder="Country">
+                                        <input type="text" placeholder="Title">
+                                        <input type="text" placeholder="Customer relation">
                                     </div>
-                                    <select>
-                                        <option value="books">Registration country</option>
-                                        <option value="html">Registration country</option>
-                                        <option value="css">Registration country</option>
-                                        <option value="php">Registration country</option>
-                                        <option value="js">Registration country</option>
-                                      </select>
-                                    <input type="text" class="companyRegistrationInput" placeholder="Company name">
-                                    <input type="text" class="companyRegistrationInput marginRight" placeholder="Registration number">
-                                    <input type="tel" class="companyRegistrationInput" placeholder="(+380)_ _  _ _ _  _ _  _ _">
-                                    <input type="email" class="companyRegistrationInput" placeholder="E-mail">
-                                </div>
-                              
-                                <div class="availability">
-                                    <h4>Website availability</h4>
-                                   <div class="availabilityFlex">
-                                        <label for="availability1">
-                                            <input type="checkbox" name="" id="">
-                                            Yes
-                                        </label>
-                                        <label for="availability1">
-                                            <input type="checkbox" name="" id="">
-                                            No
-                                        </label>
-                                   </div>
                                 </div>
 
-                                <div class="residence">
-                                    <h3>Company tax residence</h3>
-                                    <div class="residenceFlex">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Country name">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Taxpayer identification number">
-                                   </div>
-                                </div>
+                                <div class="politicalParticipationCheckbox">
+                                    <label for="politicalParticipationCheckbox1">
+                                        <input type="checkbox" name="politicalParticipationCheckbox" id="politicalParticipationCheckbox1">
+                                        <b>I confirm that</b>
+                                        the company monetary assets have lawful origin <br>
+                                        the settlement accounts and other BFSG services will not be used for illegal purposes
+                                    </label>
 
-                                <div class="residence">
-                                    <h3>Authorised company representatives</h3>
-                                    <div class="representatives">
-                                        <input type="text" class="companyRegistrationInput" placeholder="First name">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Last name">
-                                        <input type="text" class="companyRegistrationInput marginRight" placeholder="Date of birth/personal number">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Source of authority">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Representative address">
-                                   </div>
-                                </div>
+                                    <label for="politicalParticipationCheckbox2">
+                                        <input type="checkbox" name="politicalParticipationCheckbox" id="politicalParticipationCheckbox2">
+                                        <b>I acknowledge</b>
+                                            that all information provided in this Questionnaire is true and reliable and I realise that in the case of provision of intentionally false information, I bear the responsibility according to the effective legal acts as well as I confirm that I am authorised to provide this information and confirmations on behalf of the Customer and the information in my possession is sufficient for provision of these data.
+                                            I undertake to immediately inform BFSG about any changes in the above information.
+                                    </label>
 
-                                <div class="residence">
-                                    <h4>Representative contact</h4>
-                                    <div class="residenceFlex">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Telephone number ">
-                                        <input type="text" class="companyRegistrationInput" placeholder="E-mail">
-                                   </div>
+                                    <label for="politicalParticipationCheckbox3">
+                                        <input type="checkbox" name="politicalParticipationCheckbox" id="politicalParticipationCheckbox3">
+                                        <b>I undertake</b>
+                                            to immediately in writing inform BFSG about the change to the legal data of the company, changes to the composition of the management board or to the composition of the company representatives and changes to their powers of attorney. I am aware of the responsibility for the provision of false or incomplete data as stipulated by the current legislation. I agree that if BFSG finds that the data provided by me in this Questionnaire do not reflect the actual situation, BFSG has the right to refuse to cooperate with me, in particular, to refuse to open an account and/or to dissolve the contracts made with me.
+                                    </label>
+
+                                    <label for="politicalParticipationCheckbox4">
+                                        <input type="checkbox" name="politicalParticipationCheckbox" id="politicalParticipationCheckbox4">
+                                        <b>I give</b>
+                                            my consent to the processing of my personal data to the extent required by BFSG and the legal entities included to the group in order to fulfil the obligations provided for by law, including to check the identity and to update the personal data. For these purposes, BFSG may, using the personal data of the Representative, make inquiries to the public registers, national and local databases, including but not limited to inquiries to the electronic seizure system with the purpose to determine the seized accounts of the Customer if the provision of the data or the provision of access to such data is in accordance with the current legislation.
+                                    </label>
+
+                                    <label for="politicalParticipationCheckbox5">
+                                        <input type="checkbox" name="politicalParticipationCheckbox" id="politicalParticipationCheckbox5">
+                                        <b>I am notified</b>
+                                            that I have the right at any time to recall my consent, which is valid through my life and 30 years after death.
+                                    </label>
+
+                                    <label for="politicalParticipationCheckbox6">
+                                        <input type="checkbox" name="politicalParticipationCheckbox" id="politicalParticipationCheckbox6">
+                                        <b>I am notified</b>
+                                            that I have the right to receive from BFSG the data concerning me and the company represented by me as well as to correct the wrong data.
+                                    </label>
+
+                                    <label for="politicalParticipationCheckbox7">
+                                        <input type="checkbox" name="politicalParticipationCheckbox" id="politicalParticipationCheckbox7">
+                                        <b>I give consent</b>
+                                            to BFSG to transfer the data provided in this Questionnaire to third parties as may be required by law.
+                                    </label>
                                 </div>
                                 
-                                <div class="companyRegistrationFormSubmit">
-                                    <input type="submit" value="Save" class="btnSave">
-                                    <input type="submit" value="Further" class="btnFurther">
+                                <div class="politicalParticipationBigContainer">
+                                    <div class="politicalParticipationBigContainerLeft">
+                                        <h3>Customer</h3>
+                                        <div class="date">
+                                            <input type="text" class="companyRegistrationInput" placeholder="Registration date">
+                                        </div>
+                                        <input type="text" class="companyRegistrationInput" placeholder="First name">
+                                        <input type="text" class="companyRegistrationInput" placeholder="Last name">
+                                    </div>
+                                    <div class="politicalParticipationBigContainerRight">
+                                        <h3>BFSG Good Finance Company</h3>
+                                        <div class="date">
+                                            <input type="text" class="companyRegistrationInput" placeholder="Registration date">
+                                        </div>
+                                        <input type="text" class="companyRegistrationInput" placeholder="First name">
+                                        <input type="text" class="companyRegistrationInput" placeholder="Last name">
+                                    </div>
                                 </div>
                             </form>
+                            <div class="companyRegistrationFormSubmit">
+                                <button name="prev">Prev</button>
+                                <button class="btnSave">Save</button>
+                                <button name="next" class="btnFurther">Further</button>
+                            </div>
                         </div>
                     </div>
                     <div class="companyRegistration">
@@ -1520,73 +1536,103 @@
                             <p>7 из 7</p>
                         </div>
                         <div class="companyRegistrationForm">
-                            <h3>Main data</h3>
+                            <h3>Information about the Ultimate Beneficial Owner <span>(beneficial parties)</span></h3>
                             <form action="">
-                                <div class="companyRegistrationFormTop">
-                                    <input type="text" class="companyRegistrationInput" placeholder="Company name">
-                                    <input type="text" class="companyRegistrationInput" placeholder="Registration number">
+                                <div class="companyTwoInput">
+                                    <input type="text" placeholder="First name">
+                                    <input type="text" placeholder="Last name">
+                                </div>
+                                <h4>Personal data</h4>
+                                <div class="companyBigInput">
+                                    <input type="text" placeholder="Company participation (%)">
+                                    <input type="text" placeholder="Personal number/date of birth">
+                                    <input type="text" placeholder="Place of birth (city, country)">
+                                    <input type="file" name="" id="">
+                                    <input type="text" placeholder="Document title">
+                                    <input type="text" placeholder="Document No.">
                                     <div class="date">
                                         <input type="text" class="companyRegistrationInput" placeholder="Registration date">
                                     </div>
-                                    <select>
-                                        <option value="books">Registration country</option>
-                                        <option value="html">Registration country</option>
-                                        <option value="css">Registration country</option>
-                                        <option value="php">Registration country</option>
-                                        <option value="js">Registration country</option>
-                                      </select>
-                                    <input type="text" class="companyRegistrationInput" placeholder="Company name">
-                                    <input type="text" class="companyRegistrationInput marginRight" placeholder="Registration number">
-                                    <input type="tel" class="companyRegistrationInput" placeholder="(+380)_ _  _ _ _  _ _  _ _">
-                                    <input type="email" class="companyRegistrationInput" placeholder="E-mail">
+                                    <input type="text" placeholder="Country of document issue">
+                                    <input type="text" placeholder="Country of tax residence">
+                                    <div class="date">
+                                        <input type="text" class="companyRegistrationInput" placeholder="Registration date">
+                                    </div>
+                                    <input type="text" placeholder="Taxpayer identification number">
+                                    <input type="text" placeholder="Permanent residence">
+                                    <input type="text" placeholder="Country residence">
+                                    <input type="tel" name="" id="" placeholder="Contact telephone number">
+                                    <input type="email" name="" id="" placeholder="Contact e-mail">
                                 </div>
-                              
                                 <div class="availability">
-                                    <h4>Website availability</h4>
-                                   <div class="availabilityFlex">
-                                        <label for="availability1">
-                                            <input type="checkbox" name="" id="">
+                                    <h4>Status of politically exposed person (PEP)</h4>
+                                    <div class="availabilityFlex">
+                                        <label for="Status1" class="hand">
+                                            <input type="radio" name="Status" id="Status1">
                                             Yes
                                         </label>
-                                        <label for="availability1">
-                                            <input type="checkbox" name="" id="">
+                                        <label for="Status2" class="hand">
+                                            <input type="radio" name="Status" id="Status2">
                                             No
                                         </label>
-                                   </div>
+                                    </div>
                                 </div>
+                                <div class="availability">
+                                    <h4>Status of person associated with the USA (if yes - please fill in a separate form <br>
+                                        of determination of the US tax status for every beneficiary (beneficiary party)</h4>
+                                    <div class="availabilityFlex">
+                                        <label for="Status3" class="hand">
+                                            <input type="radio" name="StatusTwo" id="Status3">
+                                            Yes
+                                        </label>
+                                        <label for="Status4" class="hand">
+                                            <input type="radio" name="StatusTwo" id="Status4">
+                                            No
+                                        </label>
+                                </div>
+                                </div>
+                                <div class="politicalParticipationCheckbox">
+                                    <label for="politicalParticipationCheckboxSeven1">
+                                        <input type="checkbox" name="politicalParticipationCheckboxSeven" id="politicalParticipationCheckboxSeven1">
+                                        <b>I acknowledge</b>
+                                            that all information provided in this Questionnaire is true and reliable and I realise that in the case of provision of intentionally false information, I bear the responsibility according to the effective legal acts as well as I confirm that I am authorised to provide this information and confirmations and the information in my possession is sufficient for provision of these data.
+                                    </label>
 
-                                <div class="residence">
-                                    <h3>Company tax residence</h3>
-                                    <div class="residenceFlex">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Country name">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Taxpayer identification number">
-                                   </div>
-                                </div>
+                                    <label for="politicalParticipationCheckboxSeven2">
+                                        <input type="checkbox" name="politicalParticipationCheckboxSeven" id="politicalParticipationCheckboxSeven2">
+                                        <b>I undertake</b>
+                                            to immediately inform BFSG about any changes in the above information.
+                                    </label>
 
-                                <div class="residence">
-                                    <h3>Authorised company representatives</h3>
-                                    <div class="representatives">
-                                        <input type="text" class="companyRegistrationInput" placeholder="First name">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Last name">
-                                        <input type="text" class="companyRegistrationInput marginRight" placeholder="Date of birth/personal number">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Source of authority">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Representative address">
-                                   </div>
-                                </div>
+                                    <label for="politicalParticipationCheckboxSeven3">
+                                        <input type="checkbox" name="politicalParticipationCheckboxSeven" id="politicalParticipationCheckboxSeven3">
+                                        <b>I give my consent</b>
+                                            to the processing of my personal data to the extent required by BFSG in order to fulfil 
+                                        the obligations provided for by law, including to check the identity and to update the personal data. For these purposes, BFSG may, using the personal data of the representative, make inquiries to the public registers, national and local databases, including but not limited to inquiries with the purpose to determine the seized accounts 
+                                        of the Customer if the provision of the data or the provision of access to such data is in accordance with 
+                                        the current legislation.
+                                    </label>
 
-                                <div class="residence">
-                                    <h4>Representative contact</h4>
-                                    <div class="residenceFlex">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Telephone number ">
-                                        <input type="text" class="companyRegistrationInput" placeholder="E-mail">
-                                   </div>
-                                </div>
-                                
-                                <div class="companyRegistrationFormSubmit">
-                                    <input type="submit" value="Save" class="btnSave">
-                                    <input type="submit" value="Further" class="btnFurther">
+                                    <label for="politicalParticipationCheckboxSeven4">
+                                        <input type="checkbox" name="politicalParticipationCheckboxSeven" id="politicalParticipationCheckboxSeven4">
+                                        <b>I am notified</b>
+                                            that I have the right at any time to recall my consent, which is valid through my life and 30 years 
+                                        after death.
+                                    </label>
+
+                                    <label for="politicalParticipationCheckboxSeven5">
+                                        <input type="checkbox" name="politicalParticipationCheckboxSeven" id="politicalParticipationCheckboxSeven5">
+                                        <b>I am notified</b>
+                                            that I have the right to receive from BFSG the data concerning me and the company represented 
+                                        by me as well as to correct the wrong data.
+                                    </label>
                                 </div>
                             </form>
+                            <div class="companyRegistrationFormSubmit">
+                                <button name="prev">Prev</button>
+                                <button class="btnSave">Save</button>
+                                <button name="next" class="btnFurther">Further</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1606,6 +1652,18 @@
                 else {
                     $(".radioYesContainer label input").prop("disabled", true);
                     $(".radioYesContainer label input").prop('checked', false);
+                }
+            });
+        });
+        $(document).ready(function() {
+            $('.politicalParticipationPosition input').prop("disabled", true);
+                $(".politicalParticipationPosition input").prop('checked', false);
+            $('input:checkbox[name="politicalParticipation"]').change(function(){
+                if($(this).is(":checked")) {
+                    $('.politicalParticipationPosition input').removeAttr("disabled");
+                } else {
+                    $('.politicalParticipationPosition input').prop("disabled", true);
+                    $(".politicalParticipationPosition input").prop('checked', false);
                 }
             });
         });
