@@ -21,7 +21,8 @@
         </div>
         <div class="mainRegistrationRight">
             <div class="tab_content">
-                <div class="tab_item">
+                <span class="heading">Profile</span>
+                <div class="tab_item contents">
                     <h3>User profile admin</h3>
                     <form action="" class="formProfile">
                         <input type="text" placeholder="Name" class="inputBig">
@@ -33,11 +34,16 @@
                         <input type="submit" value="Update Profile" class="submitForm">
                     </form>
                 </div>
-                <div class="tab_item tab_itemClick">
+                <span class="heading">My companies</span>
+                <div class="tab_item contents">
                     <p class="back">
                         <img src="img/back.svg" alt="Back">
                         Back
                     </p>
+                    <div class="tabItemSectionBtn">
+                        <button class="tabItemSectionEdit">Edit</button>
+                        <button class="tabItemSectionSent">Sent</button>
+                    </div>
                     <div class="tabItemSection">
                        <div class="tabItemSectionFlex">
                             <input type="checkbox" name="" id="" class="checkboxForm">
@@ -719,6 +725,7 @@
                         <button class="download">Download</button>
                     </div>
                 </div>
+                <span class="heading">+ Add company</span>   
                 <div class="tab_item">
                     <div class="companyRegistration">
                         <div class="companyRegistrationTop">
@@ -790,7 +797,7 @@
                             <div class="companyRegistrationFormSubmit">
                                 <button name="prev">Prev</button>
                                 <button class="btnSave">Save</button>
-                                <button name="next" class="btnFurther">Further</button>
+                                <button name="next" class="btnFurther">Next</button>
                             </div>
                         </div>
                     </div>
@@ -946,7 +953,7 @@
                             <div class="companyRegistrationFormSubmit">
                                 <button name="prev">Prev</button>
                                 <button class="btnSave">Save</button>
-                                <button name="next" class="btnFurther">Further</button>
+                                <button name="next" class="btnFurther">Next</button>
                             </div>
                         </div>
                     </div>
@@ -1181,7 +1188,7 @@
                             <div class="companyRegistrationFormSubmit">
                                 <button name="prev">Prev</button>
                                 <button class="btnSave">Save</button>
-                                <button name="next" class="btnFurther">Further</button>
+                                <button name="next" class="btnFurther">Next</button>
                             </div>
                         </div>
                     </div>
@@ -1282,7 +1289,7 @@
                             <div class="companyRegistrationFormSubmit">
                                 <button name="prev">Prev</button>
                                 <button class="btnSave">Save</button>
-                                <button name="next" class="btnFurther">Further</button>
+                                <button name="next" class="btnFurther">Next</button>
                             </div>
                         </div>
                     </div>
@@ -1424,7 +1431,7 @@
                             <div class="companyRegistrationFormSubmit">
                                 <button name="prev">Prev</button>
                                 <button class="btnSave">Save</button>
-                                <button name="next" class="btnFurther">Further</button>
+                                <button name="next" class="btnFurther">Next</button>
                             </div>
                         </div>
                     </div>
@@ -1527,7 +1534,7 @@
                             <div class="companyRegistrationFormSubmit">
                                 <button name="prev">Prev</button>
                                 <button class="btnSave">Save</button>
-                                <button name="next" class="btnFurther">Further</button>
+                                <button name="next" class="btnFurther">Next</button>
                             </div>
                         </div>
                     </div>
@@ -1631,7 +1638,7 @@
                             <div class="companyRegistrationFormSubmit">
                                 <button name="prev">Prev</button>
                                 <button class="btnSave">Save</button>
-                                <button name="next" class="btnFurther">Further</button>
+                                <button name="next" class="btnFurther">Next</button>
                             </div>
                         </div>
                     </div>
@@ -1643,31 +1650,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.2.min.js" crossorigin="anonymous"></script>
     <script src="script/tabs.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('input:radio[name="contact"]').change(function() {
-                if ($(this).val() === 'radioYes') {
-                    $(".radioYesContainer label input").removeAttr('disabled');
-                }
-                else {
-                    $(".radioYesContainer label input").prop("disabled", true);
-                    $(".radioYesContainer label input").prop('checked', false);
-                }
-            });
-        });
-        $(document).ready(function() {
-            $('.politicalParticipationPosition input').prop("disabled", true);
-                $(".politicalParticipationPosition input").prop('checked', false);
-            $('input:checkbox[name="politicalParticipation"]').change(function(){
-                if($(this).is(":checked")) {
-                    $('.politicalParticipationPosition input').removeAttr("disabled");
-                } else {
-                    $('.politicalParticipationPosition input').prop("disabled", true);
-                    $(".politicalParticipationPosition input").prop('checked', false);
-                }
-            });
-        });
-    </script>
-
+    <script src="script/toggle.js"></script>
+    <script src="script/checked.js"></script>
+    <script src="script/accardion.js"></script>
 </body>
 </html>
