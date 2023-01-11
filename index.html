@@ -1069,7 +1069,7 @@
                                         <input type="text" class="companyRegistrationInput aboutKeySmoll marginRightNone" placeholder="Country 
                                         (Registration)">
                                         <input type="text" class="companyRegistrationInput" placeholder="Country (Payment Account)">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Currency">
+                                        <input type="text" class="companyRegistrationInput Currency" placeholder="Currency">
                                         <input type="text" class="companyRegistrationInput aboutKeySmoll" placeholder="%">
                                         <input type="text" class="companyRegistrationInput aboutKeySmoll marginRightNone" placeholder="GRC Member 
                                         (Y/N)">
@@ -1090,7 +1090,7 @@
                                         <input type="text" class="companyRegistrationInput aboutKeySmoll marginRightNone" placeholder="Country 
                                         (Registration)">
                                         <input type="text" class="companyRegistrationInput" placeholder="Country (Payment Account)">
-                                        <input type="text" class="companyRegistrationInput" placeholder="Currency">
+                                        <input type="text" class="companyRegistrationInput Currency" placeholder="Currency">
                                         <input type="text" class="companyRegistrationInput aboutKeySmoll" placeholder="%">
                                         <input type="text" class="companyRegistrationInput aboutKeySmoll marginRightNone" placeholder="GRC Member 
                                         (Y/N)">
@@ -1554,7 +1554,10 @@
                                     <input type="text" placeholder="Company participation (%)">
                                     <input type="text" placeholder="Personal number/date of birth">
                                     <input type="text" placeholder="Place of birth (city, country)">
-                                    <input type="file" name="" id="">
+                                    <div class="fileInput">
+                                        <label for="files" class="btn">Identity document</label>
+                                        <input type="file" id="files">
+                                    </div>
                                     <input type="text" placeholder="Document title">
                                     <input type="text" placeholder="Document No.">
                                     <div class="date">
@@ -1653,5 +1656,16 @@
     <script src="script/toggle.js"></script>
     <script src="script/checked.js"></script>
     <script src="script/accardion.js"></script>
+
+    <script>
+                $(document).ready(function () {
+            $('#files').change(function () {
+                var i = $(this).prev('label').clone();
+                var file = $('#files')[0].files[0].name;
+                $(this).prev('label').text(file);
+            }); 
+        });
+
+    </script>
 </body>
 </html>

@@ -8,13 +8,14 @@ $(".tabItemSection").click(function() {
     $(this).siblings().addClass("flexActive");
 	$(".back").removeClass("flexActive");
 	$(".back").addClass("backActive");
+	$(".tabItemSectionSlider").addClass("active");
 	$(".tabItemSection").click(function() {
 		$(".tabItemSection").addClass("active");
 	});
-	$(".fileEdit").click(function() {
-		$(".tabItemSection").addClass("active");
-		$(".tabItemSectionSlider").addClass("active");
-	});
+	// $(".tabItemSection").click(function() {
+	// 	$(".tabItemSection").addClass("active");
+	// 	$(".tabItemSectionSlider").addClass("active");
+	// });
 });
 
 $(".back").click(function()  {
