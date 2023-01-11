@@ -1434,3 +1434,10 @@ select {
         margin-bottom: 10px;
     }
 }
+@media (max-width: 576px) {
+    .fileName {
+        padding-left: 10px;
+        width: 100px;
+        overflow: hidden;
+    }
+}
