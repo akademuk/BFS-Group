@@ -1178,8 +1178,9 @@ select {
 .tabItemSectionBtn {
     display: none;
 }
-
-
+.active {
+    display: block;
+}
 
 
 
@@ -1432,6 +1433,13 @@ select {
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 10px;
+    }
+    .mainRegistration {
+        height: 100%;
+        margin-bottom: 80px;
+    }
+    .mainRegistrationRight {
+        min-height: 100%;
     }
 }
 @media (max-width: 576px) {
