@@ -1419,11 +1419,16 @@ button[name=prev] {
     .dataAboutContainer > label >input {
         margin-bottom: 0;
     }
-    .Currency {
-        margin: 0 2%;
+    .keyFlex input{
+        max-width: 24%;
+        width: 100%;
+    }
+    .keyFlex input:nth-last-of-type(1) {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 }
-@media(max-width: 768px) {
+@media(max-width: 767px) {
     .mainRegistration {
         padding: 40px 16px;
     }
@@ -1442,6 +1447,31 @@ button[name=prev] {
         margin-left: 0;
         margin-bottom: 0 !important;
         border: none;
+    }
+    .tab_item {
+        padding: 0;
+    }
+    .politicalParticipationBigContainerLeft h3{
+        font-size: 17px;
+    }
+    .ulContainer:nth-of-type(1) {
+        margin-bottom: 30px;
+    }
+    .noFlex label span {
+        font-size: 12px;
+    }
+    .radioYesContainer label input {
+        min-width: 18px;
+    }
+    .radioYesContainer {
+        margin-left: 10px;
+    }
+    .politicalParticipation label input {
+        min-width: 18px;
+        margin-right: 6px;
+    }
+    .politicalParticipationBigContainerRight h3{
+        font-size: 17px;
     }
     .mainRegistrationLeft {
         margin: 0;
@@ -1557,8 +1587,52 @@ button[name=prev] {
         min-height: 100%;
     }
     input::placeholder {
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
+    label {
+        font-size: 12px !important;
+    }
+    .companyRegistrationForm form select {
+        font-size: 12px !important;
+    }
+    h3 {
+        font-size: 20px !important;
+    }
+    .navigationRadioContainer > p {
+        font-size: 12px !important;
+    }
+    .availability label {
+        padding: 5px 0 5px 6px;
+    }
+    .politicalParticipationCheckbox label input {
+        margin-right: 5px;
+    }
+    .availability {
+        margin-bottom: 10px;
+    }
+    .companyRegistrationForm form h4 span {
+        font-size: 12px !important; 
+        display: block;
+    }
+    .free:before {
+        margin-right: 5px;
+    }
+    .politicalParticipationBigContainerRight h3 {
+        font-size: 17px !important;
+    }
+    .politicalParticipationBigContainerLeft h3 {
+        font-size: 17px !important;
+    }
+    .companyRegistrationForm3 {
+        font-size: 15px !important;
+    }
+    h3 span {
+        font-size: 12px !important;
+        display: block;
+    }
+    h4 {
+        font-size: 15px !important;
+    } 
 }
 @media (max-width: 576px) {
     .fileName {
