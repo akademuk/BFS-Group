@@ -1228,7 +1228,9 @@ button[name=prev] {
     top: 13px;
     right: 15px;
 }
-
+.headingMobile {
+    display: none;
+}
 
 
 
@@ -1633,11 +1635,48 @@ button[name=prev] {
     h4 {
         font-size: 15px !important;
     } 
+    .companyRegistrationInput {
+        max-width: 49%;
+    }
+    .date {
+        width: 49%;
+    }
+    .companyRegistrationForm form select {
+        width: 49%;
+    }
+    .aboutKeyRowContent.keyFlex input {
+        max-width: 49% !important;
+    }
+    .aboutKeyRowContent input:nth-last-of-type(1) {
+        margin-left: 0;
+    }
+    .companyTwoInput input {
+        width: 49%;
+    }
+    .companyBigInput input {
+        width: 49%;
+    }
+    .fileInput {
+        width: 49%;
+    }
 }
 @media (max-width: 576px) {
     .fileName {
         padding-left: 10px;
         width: 100px;
         overflow: hidden;
+    }
+    .companyRegistration {
+        display: none;
+    }
+    .headingMobile p{
+        font-family: 'Gilroy-Semibold';
+        font-size: 18px;
+        line-height: 110%;
+        color: #121212;
+        cursor: pointer;
+        display: block;
+        padding: 18px 15px;
+        background: #FFFFFF;
     }
 }
