@@ -1667,7 +1667,7 @@ button[name=prev] {
         overflow: hidden;
     }
     .companyRegistration {
-        display: none;
+        display: none !important;
     }
     .headingMobile p{
         font-family: 'Gilroy-Semibold';
@@ -1678,5 +1678,8 @@ button[name=prev] {
         display: block;
         padding: 18px 15px;
         background: #FFFFFF;
+    }
+    .headingMobile {
+        display: block;
     }
 }
